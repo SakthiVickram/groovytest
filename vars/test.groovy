@@ -8,5 +8,5 @@ def warning(message) {
 
 def readfile(filename){
     bat "dir"
-    bat "cat filename"
+    bat "more filename"
 }
