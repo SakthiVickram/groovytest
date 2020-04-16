@@ -5,3 +5,8 @@ def info(message) {
 def warning(message) {
     echo "WARNING: ${message}"
 }
+
+def readfile(filename){
+    bat "dir"
+    bat "cat filename"
+}
