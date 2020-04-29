@@ -7,7 +7,7 @@ def warning(message) {
 }
 
 def readfile(filename){
-    stage (readfile){
+    stage('readfile'){
         step{
         bat "dir"
         bat "more ${filename}"
