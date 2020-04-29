@@ -6,10 +6,11 @@ def warning(message) {
     echo "WARNING: ${message}"
 }
 
-def readfile(filename){
+def readfile(filename,key){
     stage('readfile'){
         bat "dir"
         bat "more ${filename}"
+        echo "${key}"
     }
 }
 
