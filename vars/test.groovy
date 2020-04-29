@@ -12,6 +12,8 @@ def readfile(filename,msg){
         bat "more ${filename}"
         echo "$msg"
         echo "${key}"
+        def props=  readJSON file: '', text: '{"access_token":"test_token"}'
+        echo "Hello World ${props['access_token']}"
     }
 }
 
