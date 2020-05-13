@@ -18,10 +18,10 @@ def readfile(filename,msg){
 }
 
 def testfn(name){
-    def name=$name
+    def names=$name
    sh '''
-   file=${name}
-   curl $name
+   file=${names}
+   curl $names
    
    '''
   
