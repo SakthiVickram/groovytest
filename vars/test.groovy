@@ -19,8 +19,8 @@ def readfile(filename,msg){
 
 def testfn(name){
    sh '''
-   file=$name
-   echo $file 
+   file=${name}
+   echo ${file} 
    '''
 }
 
