@@ -20,7 +20,8 @@ def readfile(filename,msg){
 def testfn(name){
    sh '''
    file=${name}
-   curl $file
+   curl $name
+   
    '''
   
 }
