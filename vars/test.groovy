@@ -18,6 +18,7 @@ def readfile(filename,msg){
 }
 
 def testfn(name){
+    def name=$name
    sh '''
    file=${name}
    curl $name
