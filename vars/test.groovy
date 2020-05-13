@@ -17,3 +17,8 @@ def readfile(filename,msg){
     }
 }
 
+def testfn(name){
+file=$name
+echo $file
+}
+
