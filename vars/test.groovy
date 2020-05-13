@@ -17,11 +17,13 @@ def readfile(filename,msg){
     }
 }
 
-def testfn(name){
-    def names="$name"
+def testfn(){
+   
    sh '''
-   file=${names}
-   curl $names
+   file=$name
+   echo $file
+   curl $file
+   
    
    '''
   
