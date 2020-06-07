@@ -40,3 +40,9 @@ def credtest(){
     
 }
 
+def credtest2(){
+withCredentials([string(credentialsId: 'sonarqube_token', variable: 'sonarqube')]) {
+   echo "hello $sonarqube"
+}
+}
+
