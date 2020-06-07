@@ -35,11 +35,11 @@ def credtest(){
    JEN = credentials('jenkinsid')
         sq = credentials('sonarqube_token')
     }
-      echo "Hello World ${JEN_USR}"
+      echo "Hello World ${env.JEN_USR}"
            // sh 'echo "Service password is $JEN_USR"'
-             echo "Hello World ${JEN_PSW}"
+             echo "Hello World ${env.JEN_PSW}"
              
-             echo "hello $sq"
+             echo "hello $env.sq"
     }
     
 }
