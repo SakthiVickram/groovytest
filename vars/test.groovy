@@ -30,6 +30,7 @@ def testfn(){
 }
 
 def credtest(){
+    stage('credtest'){
     environment{
    JEN = credentials('jenkinsid')
         sq = credentials('sonarqube_token')
@@ -39,6 +40,7 @@ def credtest(){
              echo "Hello World ${JEN_PSW}"
              
              echo "hello $sq"
+    }
     
 }
 
