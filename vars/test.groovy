@@ -44,6 +44,11 @@ def credtest(){
     
 }
 
+def envname(){
+    echo "name is ${env.BRANCH_NAME}"
+return env.BRANCH_NAME
+}
+
 def credtest2(){
 withCredentials([string(credentialsId: 'sonarqube_token', variable: 'sonarqube')]) {
    echo "hello $sonarqube"
