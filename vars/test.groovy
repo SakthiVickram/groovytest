@@ -55,3 +55,19 @@ withCredentials([string(credentialsId: 'sonarqube_token', variable: 'sonarqube')
 }
 }
 
+def checkBranchIndexing(){
+    def isBranchIndexing = false
+    if (!currentBuild.rawBuild) {
+      return true
+    }
+
+    currentBuild.rawBuild.getCauses().each { cause ->
+      if (cause instanceof jenkins.branch.BranchIndexingCause) {
+        isBranchIndexing = true
+      }
+    }
+    return isBranchIndexing
+ 
+
+}
+
