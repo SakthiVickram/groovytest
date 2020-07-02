@@ -1,5 +1,9 @@
 def info(message) {
     echo "INFO: ${message}"
+    if(checkBranchIndexing()){
+        return
+    }
+    echo "After info"
 }
 
 def warning(message) {
